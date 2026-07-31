@@ -1,0 +1,5 @@
+TOKEN = "8806431491:AAHtThc6fAc4o5lecqr79-yvKkCInnBsjcs"
+
+BOT_NAME = "Mput Promote Bot"
+
+ADMIN_ID = 1348125142
