@@ -65,41 +65,41 @@ async def button(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await shop(update, context)
         return
 
- elif query.data == "shop_coin":
+    if query.data == "shop_coin":
         await query.message.reply_text(
-        "🪙 *TUKAR COIN*\n\n"
-        "Segera hadir.\n\n"
-        "Nantinya coin dapat ditukar dengan:\n"
-        "• Voucher Diskon\n"
-        "• Trial Gratis\n"
-        "• Upgrade Membership",
-        parse_mode="Markdown"
-    )
-    return
+            "🪙 *TUKAR COIN*\n\n"
+            "Segera hadir.\n\n"
+            "Nantinya coin dapat ditukar dengan:\n"
+            "• Voucher Diskon\n"
+            "• Trial Gratis\n"
+            "• Upgrade Membership",
+            parse_mode="Markdown"
+        )
+        return
 
- elif query.data == "shop_upgrade":
+    if query.data == "shop_upgrade":
         await query.message.reply_text(
-        "⭐ *MEMBERSHIP*\n\n"
-        "Segera hadir.\n\n"
-        "Level Membership:\n"
-        "🥉 Silver\n"
-        "🥈 Gold\n"
-        "🥇 Platinum",
-        parse_mode="Markdown"
-    )
-    return
+            "⭐ *MEMBERSHIP*\n\n"
+            "Segera hadir.\n\n"
+            "Level Membership:\n"
+            "🥉 Silver\n"
+            "🥈 Gold\n"
+            "🥇 Platinum",
+            parse_mode="Markdown"
+        )
+        return
 
- elif query.data == "shop_voucher":
+    if query.data == "shop_voucher":
         await query.message.reply_text(
-        "🎟 *VOUCHER*\n\n"
-        "Belum memiliki voucher.\n\n"
-        "Voucher dapat diperoleh dari:\n"
-        "• Tukar Coin\n"
-        "• Event\n"
-        "• Giveaway",
-        parse_mode="Markdown"
-    )
-    return
+            "🎟 *VOUCHER*\n\n"
+            "Belum memiliki voucher.\n\n"
+            "Voucher dapat diperoleh dari:\n"
+            "• Tukar Coin\n"
+            "• Event\n"
+            "• Giveaway",
+            parse_mode="Markdown"
+        )
+        return
 
     if query.data == "coin":
         await query.message.reply_text("💰 Coin kamu: 0")

@@ -25,7 +25,7 @@ def main_menu():
             ),
             InlineKeyboardButton(
                 "🎟 Voucher",
-                callback_data="voucher"
+                callback_data="shop_voucher"
             )
         ],
 
