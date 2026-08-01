@@ -24,6 +24,7 @@ from handlers.verify import verify_payment
 from handlers.broadcast import broadcast, process_broadcast
 from handlers.commands import set_commands
 from handlers.shop import shop
+from handlers.userbot import userbot_menu, set_api
 
 
 async def button(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -65,9 +66,17 @@ async def button(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await shop(update, context)
         return
 
+    if query.data == "userbot":
+        await userbot_menu(update, context)
+        return
+      
+    if query.data == "userbot_api":
+        await set_api(update, context)
+        return
+
     if query.data == "shop_coin":
         await query.message.reply_text(
-            "🪙 *TUKAR COIN*\n\n"
+        "🪙 *TUKAR COIN*\n\n"
             "Segera hadir.\n\n"
             "Nantinya coin dapat ditukar dengan:\n"
             "• Voucher Diskon\n"

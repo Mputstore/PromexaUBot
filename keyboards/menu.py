@@ -31,8 +31,8 @@ def main_menu():
 
         [
             InlineKeyboardButton(
-                "📜 Riwayat",
-                callback_data="history"
+                "🤖 Userbot",
+                callback_data="userbot"
             ),
             InlineKeyboardButton(
                 "👤 Profil",
@@ -42,15 +42,15 @@ def main_menu():
 
         [
             InlineKeyboardButton(
-                "🪙 Coin",
-                callback_data="coin"
+                "📜 Riwayat",
+                callback_data="history"
             ),
             InlineKeyboardButton(
-                "💬 Bantuan",
-                callback_data="help"
+                "⚙️ Pengaturan",
+                callback_data="setting"
             )
-        ]
+        ],
 
-    ]
+        ]
 
     return InlineKeyboardMarkup(keyboard)
